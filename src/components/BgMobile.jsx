@@ -1,11 +1,21 @@
 ﻿export default function BgMobile() {
   return (
-    <div class="fundo-mobile">
-      <ion-icon name="home"></ion-icon>
-      <ion-icon name="search-outline"></ion-icon>
-      <ion-icon name="add-circle-outline"></ion-icon>
-      <ion-icon name="heart-outline"></ion-icon>
-      <ion-icon name="person-outline"></ion-icon>
-    </div>
+    <section id="mobileBottomBar">
+      <a href="/">
+        <ion-icon name="home"></ion-icon>
+      </a>
+      <a href="/">
+        <ion-icon name="search-outline"></ion-icon>
+      </a>
+      <a href="/">
+        <ion-icon name="add-circle-outline"></ion-icon>
+      </a>
+      <a href="/">
+        <ion-icon name="heart-outline"></ion-icon>
+      </a>
+      <a href="/">
+        <ion-icon name="person-outline"></ion-icon>
+      </a>
+    </section>
   )
 }
