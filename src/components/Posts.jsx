@@ -1,5 +1,5 @@
 ﻿import PostBottom from "./PostBottom"
-import PostTop from "./PostTop"
+import PostHeader from "./PostHeader"
 
 export default function Posts() {
   const postsData = [
@@ -113,11 +113,11 @@ export default function Posts() {
     postsData.map((postData) => {
       return (
         <div class="post">
-          <PostTop name={postData.profile.name} image={postData.profile.image} alt={postData.profile.alt} />
+          <PostHeader name={postData.profile.name} image={postData.profile.image} alt={postData.profile.alt} />
           {postData.media}
           <PostBottom comments={postData.comments} likes={postData.likes} />
         </div>
       )
     })
   )
-} 
+}

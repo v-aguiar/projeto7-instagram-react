@@ -1,4 +1,4 @@
-﻿export default function PostTop(props) {
+﻿export default function PostHeader(props) {
   const {name, image, alt} = props;
   return (
     <div class="postTop">
