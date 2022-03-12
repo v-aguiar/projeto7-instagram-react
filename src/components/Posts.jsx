@@ -1,8 +1,7 @@
 ﻿import PostBottom from "./PostBottom"
-import PostContent from "./PostContent"
 import PostTop from "./PostTop"
 
-export default function Post() {
+export default function Posts() {
   const postsData = [
     {
       profile: {
@@ -10,8 +9,7 @@ export default function Post() {
         image: "assets/stories/meowed.png",
         alt: "meowed profile"
       },
-      image: "assets/posts/black-cat.jpg",
-      alt: "Imagem principal do post",
+      media: <img src="assets/posts/black-cat.jpg" alt="Imagem principal do post" class="postImage"></img>,
       likes: {
         image: "assets/respondeai-logo.svg",
         alt: "Pequena imagem de prefil de quem curtiu",
@@ -44,8 +42,7 @@ export default function Post() {
         image: "assets/stories/barked.png",
         alt: "barked profile"
       },
-      image: "assets/posts/dog-yolo.jpg",
-      alt: "Imagem principal do post",
+      media: <img src="assets/posts/dog-yolo.jpg" alt="Imagem principal do post" class="postImage" />,
       likes: {
         image: "assets/adorableanimals-logo.svg",
         alt: "Pequena imagem de prefil de quem curtiu",
@@ -71,6 +68,44 @@ export default function Post() {
         ],
         postedTime: "HÁ 1 DIA"
       }
+    },
+    {
+      profile: {
+        name: "meowed",
+        image: "assets/stories/meowed.png",
+        alt: "meowed profile"
+      },
+      media:
+        <video class="postVideo" autoPlay muted loop>
+          <source src="assets/video.mp4" type="video/mp4" />
+          <source src="assets/video.ogv" type="video/ogv" />
+          Seu navegador não suporta vídeos.
+        </video>,
+      likes: {
+        image: "assets/respondeai-logo.svg",
+        alt: "Pequena imagem de prefil de quem curtiu",
+        description: <p>Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong></p>
+      },
+      comments: {
+        name: "meowed",
+        description: "Descrição do vídeo",
+        seeAllCommentsText: "Ver todos os 28 comentários",
+        commentsContainer: [
+          {
+            name: "Fulano",
+            comment: "Comentário de Fulano"
+          },
+          {
+            name: "Ciclano",
+            comment: "Comentário de Ciclano"
+          },
+          {
+            name: "Beltrano",
+            comment: "Comentário de Beltrano"
+          }
+        ],
+        postedTime: "HÁ 1 HORA"
+      }
     }
   ]
 
@@ -79,7 +114,7 @@ export default function Post() {
       return (
         <div class="post">
           <PostTop name={postData.profile.name} image={postData.profile.image} alt={postData.profile.alt} />
-          <PostContent image={postData.image} alt={postData.alt} />
+          {postData.media}
           <PostBottom comments={postData.comments} likes={postData.likes} />
         </div>
       )

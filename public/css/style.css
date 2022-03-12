@@ -121,6 +121,7 @@ header input::placeholder {
 }
 
 /********** Stories  **********/
+
 #mainSection {
   overflow-x: hidden;
 
@@ -135,6 +136,18 @@ header input::placeholder {
   margin-bottom: 18px;
 
   padding-left: 18px;
+
+  overflow-x: scroll;
+
+  /* IE */
+  -ms-overflow-style: none;
+  /* Firefox */
+  scrollbar-width: none;
+}
+
+/* Safari and Chrome */
+.stories::-webkit-scrollbar {
+  display: none;
 }
 
 .stories button {
@@ -150,6 +163,8 @@ header input::placeholder {
 
   filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
   border-radius: 50%;
+
+  position: fixed;
 }
 
 .stories .story {
@@ -426,7 +441,7 @@ header input::placeholder {
 
     position: absolute;
 
-    right: 17px;
+    right: 38px;
     top: 46px;
   }
 

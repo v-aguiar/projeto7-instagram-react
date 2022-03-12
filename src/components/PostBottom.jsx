@@ -2,7 +2,6 @@
 import PostLikes from "./PostLikes";
 
 export default function PostBottom(props) {
-  console.log("Props inside PostBottom.jsx: ", props)
   const {comments, likes} = props;
 
   return (
