@@ -3,6 +3,7 @@ import BgMobile from "./BgMobile";
 import Sidebar from "./Sidebar";
 
 export default function Main() {
+
   return (
     <main>
       <MainSection />

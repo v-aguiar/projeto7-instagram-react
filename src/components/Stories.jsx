@@ -39,7 +39,7 @@ export default function Stories() {
     },
     {
       title: "memeriago...",
-      image: "assets/stories/memeriagourmet.png",
+      image: "assets/stories/memeriagourmet.jpeg",
       alt: "memeriagourmet profile",
     }
   ]

@@ -1,5 +1,5 @@
-﻿import Feed from "./Feed";
-import Stories from "./Stories";
+﻿import Stories from "./Stories";
+import Feed from "./Feed";
 
 export default function MainSection() {
   return (

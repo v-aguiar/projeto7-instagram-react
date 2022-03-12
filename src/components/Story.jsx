@@ -1,13 +1,15 @@
 ﻿export default function Story(props) {
+  const {image, alt, title} = props
+
   return (
     <div class="story">
       <div class="storyBg">
         <a href="/">
-          <img src={props.image} alt={props.alt} />
+          <img src={image} alt={alt} />
         </a>
       </div>
       <p>
-        {props.title}
+        {title}
       </p>
     </div>
   )

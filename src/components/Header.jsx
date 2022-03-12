@@ -31,8 +31,6 @@
           <ion-icon name="paper-plane-outline"></ion-icon>
         </span>
       </span>
-
-
     </header>
   )
 }
