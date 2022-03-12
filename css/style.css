@@ -63,7 +63,7 @@ header,
 }
 
 header {
-  justify-content: space-between;
+  justify-content: space-around;
 
   position: fixed;
   top: 0;
@@ -468,7 +468,7 @@ header input::placeholder {
 
     z-index: 1;
 
-    max-width: 293px;
+    max-width: 263.5px;
     margin-right: 12px;
   }
 
