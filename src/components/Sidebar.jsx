@@ -1,20 +1,15 @@
 ﻿import SidebarSugestions from "./SidebarSugestions"
 
-export default function Sidebar() {
-  const userData = {
-    name: "Catana",
-    username: "catanacomics",
-    image: "assets/sidebar/catanacomics.svg",
-    alt: "Catanacomics profile",
-  }
+export default function Sidebar(props) {
+  const {name, username, image, alt} = props;
 
   return (
     <aside id="sidebar">
       <div class="sidebarTop">
-        <img src={userData.image} alt={userData.alt} />
+        <img src={image} alt={alt} />
         <span>
-          <h4>{userData.username}</h4>
-          <p>{userData.name}</p>
+          <h4>{username}</h4>
+          <p>{name}</p>
         </span>
       </div>
 
