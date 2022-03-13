@@ -9,7 +9,7 @@ export default function Posts() {
         image: "assets/stories/meowed.png",
         alt: "meowed profile"
       },
-      media: <img src="assets/posts/black-cat.jpg" alt="Imagem principal do post" class="postImage"></img>,
+      media: <img src="assets/posts/black-cat.jpg" alt="Imagem principal do post" className="postImage"></img>,
       likes: {
         image: "assets/respondeai-logo.svg",
         alt: "Pequena imagem de prefil de quem curtiu",
@@ -42,7 +42,7 @@ export default function Posts() {
         image: "assets/stories/barked.png",
         alt: "barked profile"
       },
-      media: <img src="assets/posts/dog-yolo.jpg" alt="Imagem principal do post" class="postImage" />,
+      media: <img src="assets/posts/dog-yolo.jpg" alt="Imagem principal do post" className="postImage" />,
       likes: {
         image: "assets/adorableanimals-logo.svg",
         alt: "Pequena imagem de prefil de quem curtiu",
@@ -76,7 +76,7 @@ export default function Posts() {
         alt: "meowed profile"
       },
       media:
-        <video class="postVideo" autoPlay muted loop>
+        <video className="postVideo" autoPlay muted loop>
           <source src="assets/video.mp4" type="video/mp4" />
           <source src="assets/video.ogv" type="video/ogv" />
           Seu navegador não suporta vídeos.
@@ -112,7 +112,7 @@ export default function Posts() {
   return (
     postsData.map((postData) => {
       return (
-        <div class="post">
+        <div className="post">
           <PostHeader name={postData.profile.name} image={postData.profile.image} alt={postData.profile.alt} />
           {postData.media}
           <PostBottom comments={postData.comments} likes={postData.likes} />

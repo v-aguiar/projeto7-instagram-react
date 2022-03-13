@@ -30,7 +30,7 @@ export default function SidebarSugestions() {
   ]
 
   return (
-    <div class="sidebarSugestions">
+    <div className="sidebarSugestions">
       <span>
         <h4>Sugestões para você</h4>
         <h4>Ver tudo</h4>

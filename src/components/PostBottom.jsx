@@ -5,9 +5,9 @@ export default function PostBottom(props) {
   const {comments, likes} = props;
 
   return (
-    <div class="postBottom">
-      <div class="postInteractions">
-        <span class="postIcons">
+    <div className="postBottom">
+      <div className="postInteractions">
+        <span className="postIcons">
           <ion-icon name="heart-outline"></ion-icon>
           <ion-icon name="chatbubble-outline"></ion-icon>
           <ion-icon name="paper-plane-outline"></ion-icon>

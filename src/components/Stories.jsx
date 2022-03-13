@@ -45,8 +45,8 @@ export default function Stories() {
   ]
 
   return (
-    <div class="stories">
-      <button class="storiesArrowButton">
+    <div className="stories">
+      <button className="storiesArrowButton">
         <ion-icon name="chevron-forward-circle"></ion-icon>
       </button>
 

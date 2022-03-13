@@ -5,7 +5,7 @@ export default function Sidebar(props) {
 
   return (
     <aside id="sidebar">
-      <div class="sidebarTop">
+      <div className="sidebarTop">
         <img src={image} alt={alt} />
         <span>
           <h4>{username}</h4>
@@ -15,12 +15,12 @@ export default function Sidebar(props) {
 
       <SidebarSugestions />
 
-      <div class="sidebarFooter">
-        <p class="description">
+      <div className="sidebarFooter">
+        <p className="description">
           Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes •
           Hashtags • Idiomas
         </p>
-        <p class="copyright">
+        <p className="copyright">
           © 2021 INSTAGRAM DO FACEBOOK
         </p>
       </div>

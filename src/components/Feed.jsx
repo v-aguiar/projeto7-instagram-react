@@ -2,7 +2,7 @@ import Posts from "./Posts";
 
 export default function Feed() {
   return (
-    <div class="feed">
+    <div className="feed">
       <Posts />
     </div>
   )

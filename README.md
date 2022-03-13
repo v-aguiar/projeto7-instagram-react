@@ -1,3 +1,9 @@
+## Github Pages Deployed page: https://v-aguiar.github.io/projeto7-instagram-react 
+- Para rodar o ```bash npm run deploy``` adicionar o caminho "/projeto7-instagram-react" ao fim da url na propriedade "homepage" no package.json
+```json
+"homepage": "https://v-aguiar.github.io/"
+```
+
 ## Requirements
 
 - [x]  Você deve criar seu projeto usando o comando que demos do `create-react-app`**:**

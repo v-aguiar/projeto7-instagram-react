@@ -1,7 +1,7 @@
 ﻿export default function PostHeader(props) {
   const {name, image, alt} = props;
   return (
-    <div class="postTop">
+    <div className="postTop">
       <span>
         <img src={image} alt={alt} />
         <h4>{name}</h4>
